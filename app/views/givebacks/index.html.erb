@@ -1,0 +1,24 @@
+<h1>ＣＲＵＤ練起來</h1>
+
+<table>
+    <thead>
+    <tr>
+        <td>回饋商品名</td>
+        <td>商品價格</td>
+        <td>描述</td>
+    </tr>
+    </thead>
+    <tbody>
+    <% @givebacks.each do |g|%>
+        <tr>
+        <td><%= givaback.title %></td>
+        <td><%= givaback.price %></td>
+        <td><%= givaback.description %></td>
+        </tr>
+       
+    <%end%>
+    </tbody>
+
+</table>
+
+ <%=link_to "新增回饋商品", new_giveback_path %>
